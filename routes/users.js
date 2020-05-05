@@ -51,7 +51,7 @@ router.post(
         payload,
         config.get("jwtSecret"),
         {
-          expressIn: 360000,
+          expressIn: 36000000,
         },
         (err, token) => {
           if (err) throw err;
